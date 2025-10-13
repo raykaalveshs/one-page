@@ -4,4 +4,6 @@ Desenvolvendo um site que contém apenas uma página para um cliente real, utili
 
 O objetivo do site é promover a venda de produtos de beleza e auto-cuidado
 
-Autora: Rayka Alves
+# Autora:
+
+Rayka Alves
