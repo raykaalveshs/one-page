@@ -1,0 +1,75 @@
+/**
+    folha de estilo do professor.com
+    @author 
+*/
+
+/* Layout >>>>>>>> */
+
+/* Variaveis */
+:root{
+    --azulClaro: #9cdcfe;
+    --azulMedio: #3498db;
+    --branco: #ffff;
+    --pao: #F9A825;
+    --marrom: #d2922e;
+    --preto: #0000;
+}
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* FIMM - LAYOUT << */
+
+
+/*Smartphone portrait*/
+
+
+/*FIM DO SMARTPHONE PORTRAIT */
+
+
+/*Smartphone lanscape*/
+@media (min-width: 576px) {
+
+
+}
+/*FIM DO Smartphone lanscape*/
+
+
+/*Tablet portrait*/
+@media (min-width: 768px) {
+
+
+}
+/*fim Tablet portrait*/
+
+/* Tablet landscape */
+@media (min-width: 992px) {
+
+
+}
+/* FIM Tablet landscape */
+
+
+/*Smartphone lanscape*/
+
+/*FIM Smartphone lanscape*/
+
+/* Notebook / PC - HD */
+@media (min-width: 1200px) {
+
+}
+/* FIM Notebook / PC - HD */
+
+
+/* Notebook / PV / TV - Full HD ou 4k */
+@media (min-width: 1400px) {
+
+}
+/*FIM  Notebook / PV / TV - Full HD ou 4k */
