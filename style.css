@@ -6,7 +6,7 @@
 /* Layout >>>>>>>> */
 
 /* Variaveis */
-:root{
+:root {
     --NudeRosado: #f2d6cf;
     --VinhoSuave: #7a3941;
     --BegeQuente: #f6e9e2;
@@ -16,36 +16,57 @@
 }
 
 /* CSS RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: "Montserrat", sans-serif;
+
+body {
+    font-family: "Karla", sans-serif;
 }
 
 .container {
     display: flex;
+    margin: 0 auto;
+    /* CENTRALIZAR O CONTAINER */
 }
+
+/* BOTÃO */
+.btn {
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #f2d6cf;
+    padding: 5px 30px;
+    color: #7a3941;
+    border-radius: 25px;
+    border: 1px solid var(--VinhoSuave);
+    text-shadow:
+        0px 2px 3px rgba(0, 0, 0, 0.10),
+        0px 4px 6px rgba(43, 26, 26, 0.05);
+
+}
+
 
 /* FIM - LAYOUT */
 
 
 /*Smartphone portrait*/
 /* Cabeçalho */
-header{
+header {
     height: 60px;
     background-color: rgb(242, 214, 207, 0.75);
 }
 
-.logo img{
+.logo img {
     width: 128px;
     height: 128px;
+
 }
 
 #check {
-    display: none; 
+    display: none;
 }
 
 label {
@@ -60,84 +81,159 @@ nav ul {
     list-style: none;
     height: 100vh;
     position: fixed;
-    top: 60px;
+    top: 35px;
     right: 0px;
-    background-color: rgb(242, 214, 207, 0.15);
+    background-color: rgb(242, 214, 207, 0.50);
     width: 40%;
-    right: -40%; /*AJUSTAR O WIDTH*/
+    right: -40%;
+    /*AJUSTAR O WIDTH*/
     transition: all 0.5s;
+    margin-top: 23px;
+
 
 }
 
 /* AÇÃO PARA A CAIXA CHECK */
 /* QUANDO SELECIONADA, MUDAR UL */
-#check:checked~ul{
+#check:checked~ul {
     right: 0;
 }
 
 nav ul li {
     padding: 20px;
-    border-bottom: 1px solid var(--BegeQuente); 
+    border-bottom: 1px solid var(--BegeQuente);
     text-align: right;
+
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: var(--VinhoSuave);
+
 }
 
+/* PRINCIPAL DO SMARTHPHONE PORTRAIT */
+main {
+    height: 50vh;
+    background: url(img/banner.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #7a3941;
+    font-size: 25px;
+    font-family: "Karla", sans-serif;
+    letter-spacing: 0.2rem;
+    text-shadow:
+        0px 2px 3px rgba(0, 0, 0, 0.15),
+        0px 4px 6px rgba(43, 26, 26, 0.15);
+
+}
+
+main h2 {
+    color: #7a3941;
+    font-weight: 800;
+    font-size: 10px;
+    text-shadow:
+        0px 2px 3px rgba(0, 0, 0, 0.10),
+        0px 4px 6px rgba(43, 26, 26, 0.3);
+
+
+}
 
 /*FIM DO SMARTPHONE PORTRAIT */
 
 
 /*SMARTPHONE LANDSCAPE*/
 @media (min-width: 576px) {
+
+    /* LAYOUT */
+    .container {
+        max-width: 540px;
+    }
+
     /* CABEÇALHO */
-    nav ul{
-    width: 25%;
-    right: -25%;
+    nav ul {
+        width: 25%;
+        right: -25%;
+
     }
 }
+
 /*FIM DO Smartphone lanscape*/
 
 
 /*Tablet portrait*/
 @media (min-width: 768px) {
 
+    /* LAYOUT */
+    .container {
+        max-width: 720px;
+    }
 
+    /* PRINCIPAL */
+    main h1{
+        font-size: 2.8rem;
+    }
+
+    main h2{
+        font-size: 1.2rem;
+    }
 }
+
 /*fim Tablet portrait*/
 
 /* Tablet landscape */
 @media (min-width: 992px) {
 
-
+    /* LAYOUT */
+    .container {
+        max-width: 960px;
+    }
 }
+
 /* FIM Tablet landscape */
 
 
 /*Smartphone lanscape*/
 
+
 /*FIM Smartphone lanscape*/
 
 /* Notebook / PC - HD */
 @media (min-width: 1200px) {
+
+    /* LAYOUT   */
+    .container {
+        justify-content: space-between;
+        max-width: 1140px;
+    }
+
     /* CABEÇALHO */
-    header{
+    header {
         height: 100px;
     }
 
-    .logo img{
+    .logo img {
         width: 194px;
         height: 194px;
-        
+
     }
 
     label {
         display: none;
     }
 
-    nav ul{
+    nav ul {
         position: static;
         width: 100%;
         height: auto;
@@ -145,22 +241,46 @@ nav ul li a{
 
     }
 
-    nav ul li{
+    nav ul li {
         float: left;
         border: 0;
     }
 
-    nav ul li a:hover{
+    nav ul li a:hover {
         color: var(--DouradoClaro)
-        
     }
 
+    main h1{
+        font-size: 4rem;
+    }
+
+    main h2{
+        font-size: 1.6rem;
+    }
+    
+
 }
+
 /* FIM Notebook / PC - HD */
 
 
 /* Notebook / PV / TV - Full HD ou 4k */
 @media (min-width: 1400px) {
 
+
+    /* LAYOUT */
+    .container {
+        justify-content: space-between;
+        max-width: 1320px;
+    }
+    main h1{
+        font-size: 6rem;
+    }
+
+    main h2{
+        font-size: 3rem;
+    }
+    
 }
+
 /*FIM  Notebook / PV / TV - Full HD ou 4k */
