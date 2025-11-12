@@ -231,7 +231,7 @@ main h2 {
     font-size: 30px;
 }
 
-.sobre-text p {
+.text p {
     color: var(--VinhoSuave);
     font-weight: 400;
     font-family: "Questrial", sans-serif;
@@ -241,12 +241,13 @@ main h2 {
     margin-bottom: 40px;
 }
 
-#sobre-video iframe {
+#video iframe {
     width: 355px;
     height: 196px;
-    border-radius: 10px;
 
 }
+
+/* WIREFRAME */
 
 #wireframe {
     padding: 50px 10px;
@@ -268,7 +269,7 @@ main h2 {
     margin-bottom: 25px;
     margin-top: auto;
     color: var(--VinhoSuave);
-    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     letter-spacing: 4px;
     text-align: left;
@@ -292,13 +293,124 @@ main h2 {
     background-color: var(--VinhoSuave);
 
     background-image: url(.img/pdf.png);
-    padding: 10px 20px;
+    padding: 10px 40px;
     color: black;
     border-radius: 30px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
+}
+
+/* CARTÕES */
+
+#produto {
+    padding: 50px 0px;
+    background-color: var(--BegeQuente);
+}
+
+#produto .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.card {
+    width: 339px;
+    height: 550px;
+    background-color: var(--VinhoSuave);
+    margin-bottom: 25px;
+    border: 2px solid var(--VinhoSuave);
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0.2, 0.2, 0.2, 0.2);
 
 }
+
+.card img {
+    
+}
+
+.card h2 {
+    /* margin-top: 15px 0px; */
+    margin-bottom: 15px;
+    text-shadow: 10px 0px 20px rgba(0, 0, 0, 0.797);
+    margin-top: 25px;
+    color: var(--BrancoGelo);
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+.card p {
+    padding: 0px 10px 25px 10px;
+    color: var(--BrancoGelo);
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+#produto h1 {
+    color: var(--NudeRosado);
+    color: #7a3941;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+
+}
+
+#produto .Botao {
+    padding: 9px 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--NudeRosado);
+    letter-spacing: 4px;
+    color: var(--VinhoSuave);
+    border: 2px solid var(--preto);
+    align-items: center;
+    box-shadow: 10px 20px 20px rgba(0, 1.3, 0, 0.40);
+}
+/* RODAPÉ */
+#endereco {
+    background-color: var(--NudeRosado);
+}
+
+#endereco .container {
+    flex-direction: column;
+    height: 200px;
+}
+
+#contatos img {
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+}
+
+#contatos h2{
+    color: #7a3941;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    font-style: normal;
+}
+
+#contatos p {
+    display: none;
+}
+
 
 /*FIM DO SMARTPHONE PORTRAIT */
 
@@ -373,6 +485,42 @@ main h2 {
     margin-left: 20px;
 }
 
+/* RODAPÉ */
+#endereco {
+    background-color: var(--NudeRosado);
+}
+
+#endereco .container {
+    flex-direction: column ;
+    height: 200px;
+    
+}
+
+#contatos img {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: -20px;
+    margin-left: 100px;
+    
+}
+
+#contatos h2{
+    color: #7a3941;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    font-style: normal;
+}
+
+#contatos p {
+    display: none;
+} 
 /*FIM DO Smartphone lanscape*/
 
 
